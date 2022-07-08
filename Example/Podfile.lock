@@ -11,10 +11,10 @@ PODS:
   - SDWebImage (5.12.1):
     - SDWebImage/Core (= 5.12.1)
   - SDWebImage/Core (5.12.1)
-  - SigmobAd-iOS (4.1.0):
-    - SigmobAd-iOS/WindSDK (= 4.1.0)
-  - SigmobAd-iOS/WindFoundation (4.1.0)
-  - SigmobAd-iOS/WindSDK (4.1.0):
+  - SigmobAd-iOS (4.2.0):
+    - SigmobAd-iOS/WindSDK (= 4.2.0)
+  - SigmobAd-iOS/WindFoundation (4.2.0)
+  - SigmobAd-iOS/WindSDK (4.2.0):
     - SigmobAd-iOS/WindFoundation
   - Toast (4.0.0)
   - XLForm (4.3.0)
@@ -28,7 +28,7 @@ DEPENDENCIES:
   - MJRefresh (= 3.7.2)
   - ReactiveObjC
   - SDWebImage (= 5.12.1)
-  - SigmobAd-iOS (= 4.1.0)
+  - SigmobAd-iOS (= 4.2.0)
   - Toast (~> 4.0.0)
   - XLForm (= 4.3)
 
@@ -56,10 +56,10 @@ SPEC CHECKSUMS:
   MJRefresh: 30997d30b347c8e9508a4db11e3a690da0c9b85a
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
-  SigmobAd-iOS: 7afbf0832d9bb1529159a7964dee5828beb0ee61
+  SigmobAd-iOS: e049d3c92d111b5db95e4d72dc31a9e8562c7715
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   XLForm: a439f9512078ed538e8335c8b06d3f3286bbfd37
 
-PODFILE CHECKSUM: 68418864f761f99ea1c37d5295cd25ad1383a9ac
+PODFILE CHECKSUM: 9aaa12ce1ca11a95e0f4ce0a1e005ca9cd27ca6c
 
 COCOAPODS: 1.11.2

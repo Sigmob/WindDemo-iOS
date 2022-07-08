@@ -22,6 +22,6 @@ target 'WindSample' do
   
   # Pods for WindmillSample
   commonPods
-  pod 'SigmobAd-iOS', '4.1.0'
+  pod 'SigmobAd-iOS', '4.2.0'
   
 end
