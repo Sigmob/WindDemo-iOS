@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9E66EB7F6CC201BA2E6E0D66 /* Pods_WindSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25344F34AF15A35CB700A578 /* Pods_WindSample.framework */; };
 		C736027F275E017D00B7B2C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C736027E275E017D00B7B2C9 /* AppDelegate.m */; };
-		C7360282275E017D00B7B2C9 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7360281275E017D00B7B2C9 /* SceneDelegate.m */; };
 		C7360285275E017D00B7B2C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7360284275E017D00B7B2C9 /* ViewController.m */; };
 		C7360288275E017D00B7B2C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7360286275E017D00B7B2C9 /* Main.storyboard */; };
 		C736028A275E017F00B7B2C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7360289275E017F00B7B2C9 /* Assets.xcassets */; };
@@ -51,8 +50,6 @@
 		C736027A275E017D00B7B2C9 /* WindSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WindSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C736027D275E017D00B7B2C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C736027E275E017D00B7B2C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C7360280275E017D00B7B2C9 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		C7360281275E017D00B7B2C9 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		C7360283275E017D00B7B2C9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C7360284275E017D00B7B2C9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C7360287275E017D00B7B2C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -172,8 +169,6 @@
 				C7360299275E05B600B7B2C9 /* App */,
 				C736027D275E017D00B7B2C9 /* AppDelegate.h */,
 				C736027E275E017D00B7B2C9 /* AppDelegate.m */,
-				C7360280275E017D00B7B2C9 /* SceneDelegate.h */,
-				C7360281275E017D00B7B2C9 /* SceneDelegate.m */,
 				C7360283275E017D00B7B2C9 /* ViewController.h */,
 				C7360284275E017D00B7B2C9 /* ViewController.m */,
 				C7360286275E017D00B7B2C9 /* Main.storyboard */,
@@ -437,7 +432,6 @@
 				C7D8C2F1275F591500719BFD /* ChannelItem.m in Sources */,
 				C73602AD275E083400B7B2C9 /* WindNativeAdViewController.m in Sources */,
 				C7CD05B32761F8D90015C417 /* NativeAdCustomView.m in Sources */,
-				C7360282275E017D00B7B2C9 /* SceneDelegate.m in Sources */,
 				C7CD05D7276212D90015C417 /* FeedNormalModel.m in Sources */,
 				C7CD05B02761F6680015C417 /* WindNativeTableViewController.m in Sources */,
 			);

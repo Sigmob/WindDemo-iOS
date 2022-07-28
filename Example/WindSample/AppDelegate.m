@@ -17,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self setNavigationBackItem];
     [self initLogService];
     [self initTableApparance];
     
@@ -36,22 +37,28 @@
     [[UITableView appearance] setSeparatorInset:UIEdgeInsetsZero];
 }
 
-
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options  API_AVAILABLE(ios(13.0)){
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
+- (void)setNavigationBackItem {
+    [[UINavigationBar appearance] setTranslucent:NO];
+    if (@available(iOS 13.0, *)) {
+        UINavigationBarAppearance *app = [[UINavigationBarAppearance alloc] init];
+        [app configureWithOpaqueBackground];
+        app.backgroundColor = [UIColor colorWithRed:242/255.0 green:105/255.0 blue:11/255.0 alpha:1];
+        app.titleTextAttributes = @{
+            NSForegroundColorAttributeName: UIColor.whiteColor
+        };
+        [[UINavigationBar appearance] setScrollEdgeAppearance:app];
+        [[UINavigationBar appearance] setStandardAppearance:app];
+    }else {
+        //设置导航栏左右按钮的着色
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+        //设置导航栏背景颜色
+        [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:242/255.0 green:105/255.0 blue:11/255.0 alpha:1]];
+        //左右item的颜色】
+        [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+        //title
+        [[UINavigationBar appearance] setTitleTextAttributes:@{
+            NSForegroundColorAttributeName: UIColor.whiteColor
+        }];
+    }
 }
-
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions API_AVAILABLE(ios(13.0)){
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-}
-
-
 @end
