@@ -9,6 +9,7 @@
 #import "XLFormRowLeftIconAndTitleCell.h"
 #import <WindSDK/WindSDK.h>
 #import "WindRewardVideoAdViewController.h"
+#import "WindNewIntersititialAdViewController.h"
 #import "WindIntersititialAdViewController.h"
 #import "WindNativeAdViewController.h"
 #import "WindSplashAdViewController.h"
@@ -53,17 +54,27 @@
     row.action.formSelector = @selector(rewardVideoAdAction:);
     [section addFormRow:row];
     
-    //********************************************************************************
+    //****************************************************
     section = [XLFormSectionDescriptor formSection];
     [form addFormSection:section];
     
-    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"InterstitialAd" rowType:XLFormRowDescriptorTypeLeftIconAndTitle title:@"插屏广告"];
+    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"InterstitialAd" rowType:XLFormRowDescriptorTypeLeftIconAndTitle title:@"全屏插屏广告"];
     row.required = YES;
     [row.cellConfigAtConfigure setValue:[UIImage imageNamed:@"demo_play"] forKey:@"image"];
     row.action.formSelector = @selector(interstitialAdAction:);
     [section addFormRow:row];
     
-    //********************************************************************************
+    //****************************************************
+    section = [XLFormSectionDescriptor formSection];
+    [form addFormSection:section];
+    
+    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"InterstitialAd" rowType:XLFormRowDescriptorTypeLeftIconAndTitle title:@"新插屏广告"];
+    row.required = YES;
+    [row.cellConfigAtConfigure setValue:[UIImage imageNamed:@"demo_play"] forKey:@"image"];
+    row.action.formSelector = @selector(newInterstitialAdAction:);
+    [section addFormRow:row];
+    
+    //*****************************************************
     section = [XLFormSectionDescriptor formSection];
     [form addFormSection:section];
     
@@ -106,6 +117,10 @@
 }
 - (void)interstitialAdAction:(XLFormRowDescriptor *)sender {
     WindIntersititialAdViewController *vc = [WindIntersititialAdViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (void)newInterstitialAdAction:(XLFormRowDescriptor *)sender {
+    WindNewIntersititialAdViewController *vc = [WindNewIntersititialAdViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)nativeAdAction:(XLFormRowDescriptor *)sender {

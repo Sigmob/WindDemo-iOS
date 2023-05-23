@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9E66EB7F6CC201BA2E6E0D66 /* Pods_WindSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25344F34AF15A35CB700A578 /* Pods_WindSample.framework */; };
+		C712D78B2A1C6E1100E7D60B /* WindNewIntersititialAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C712D78A2A1C6E1100E7D60B /* WindNewIntersititialAdViewController.m */; };
 		C736027F275E017D00B7B2C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C736027E275E017D00B7B2C9 /* AppDelegate.m */; };
 		C7360285275E017D00B7B2C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7360284275E017D00B7B2C9 /* ViewController.m */; };
 		C7360288275E017D00B7B2C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7360286275E017D00B7B2C9 /* Main.storyboard */; };
@@ -47,6 +48,8 @@
 		291877FC814DE8B4AE755B7A /* Pods-WindmillSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindmillSample.release.xcconfig"; path = "Target Support Files/Pods-WindmillSample/Pods-WindmillSample.release.xcconfig"; sourceTree = "<group>"; };
 		30AAE2EB802E0CF163B9E226 /* Pods-WindmillSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindmillSample.debug.xcconfig"; path = "Target Support Files/Pods-WindmillSample/Pods-WindmillSample.debug.xcconfig"; sourceTree = "<group>"; };
 		3D3D293208F3D58AE80E7F53 /* Pods-WindSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindSample.debug.xcconfig"; path = "Target Support Files/Pods-WindSample/Pods-WindSample.debug.xcconfig"; sourceTree = "<group>"; };
+		C712D7892A1C6E1100E7D60B /* WindNewIntersititialAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindNewIntersititialAdViewController.h; sourceTree = "<group>"; };
+		C712D78A2A1C6E1100E7D60B /* WindNewIntersititialAdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindNewIntersititialAdViewController.m; sourceTree = "<group>"; };
 		C736027A275E017D00B7B2C9 /* WindSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WindSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C736027D275E017D00B7B2C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C736027E275E017D00B7B2C9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -218,6 +221,8 @@
 				C73602A6275E080900B7B2C9 /* WindSplashAdViewController.m */,
 				C73602A8275E081F00B7B2C9 /* WindIntersititialAdViewController.h */,
 				C73602A9275E081F00B7B2C9 /* WindIntersititialAdViewController.m */,
+				C712D7892A1C6E1100E7D60B /* WindNewIntersititialAdViewController.h */,
+				C712D78A2A1C6E1100E7D60B /* WindNewIntersititialAdViewController.m */,
 				C73602AB275E083400B7B2C9 /* WindNativeAdViewController.h */,
 				C73602AC275E083400B7B2C9 /* WindNativeAdViewController.m */,
 				C7CD05AE2761F6680015C417 /* WindNativeTableViewController.h */,
@@ -426,6 +431,7 @@
 				C7D8C2F5275F601500719BFD /* WindHelper.m in Sources */,
 				C7CD05AD2761ECD40015C417 /* XLFormSliderValueCell.m in Sources */,
 				C7CD051A276084B10015C417 /* XLFormInlineLabelCell.m in Sources */,
+				C712D78B2A1C6E1100E7D60B /* WindNewIntersititialAdViewController.m in Sources */,
 				C7CD05D2276212980015C417 /* WindFeedVideoTableViewCell.m in Sources */,
 				C73602B0275E084700B7B2C9 /* WindToolViewController.m in Sources */,
 				C73602A7275E080900B7B2C9 /* WindSplashAdViewController.m in Sources */,

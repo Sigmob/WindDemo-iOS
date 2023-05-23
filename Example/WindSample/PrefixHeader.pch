@@ -21,7 +21,8 @@ static const int ddLogLevel = DDLogLevelInfo;
 #define AppKey @"eccdcdbd9adbd4a7"//应用key
 #define SplashAdPlacementId @"ea1f8f9bd12"//开屏广告位ID
 #define RewardVideoAdPlacementId @"ea1f8f7b662"//激励视频广告位ID
-#define FullScreenVideoAdPlacementId @"ea1f8fb93fb"//插屏广告位ID
+#define FullScreenVideoAdPlacementId @"ea1f8fb93fb"//全屏插屏广告位ID
+#define InterstitialAdPlacementId @"ea1f8fb93fb"//新插屏广告位ID
 #define NativeAdPlacementId @"ed70b3615a5"//原生广告-自渲染信息流广告位ID
 
 
