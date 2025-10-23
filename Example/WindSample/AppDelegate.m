@@ -21,9 +21,6 @@
     [self initLogService];
     [self initTableApparance];
     
-    WindAdOptions *option = [[WindAdOptions alloc] initWithAppId:AppId appKey:AppKey];
-    [WindAds startWithOptions:option];
-    
     return YES;
 }
 

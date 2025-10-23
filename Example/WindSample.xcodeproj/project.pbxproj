@@ -18,7 +18,6 @@
 		C7360298275E05B300B7B2C9 /* XLFormRowLeftIconAndTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7360296275E05B200B7B2C9 /* XLFormRowLeftIconAndTitleCell.m */; };
 		C73602A4275E07F500B7B2C9 /* WindRewardVideoAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73602A3275E07F500B7B2C9 /* WindRewardVideoAdViewController.m */; };
 		C73602A7275E080900B7B2C9 /* WindSplashAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73602A6275E080900B7B2C9 /* WindSplashAdViewController.m */; };
-		C73602AA275E081F00B7B2C9 /* WindIntersititialAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73602A9275E081F00B7B2C9 /* WindIntersititialAdViewController.m */; };
 		C73602AD275E083400B7B2C9 /* WindNativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73602AC275E083400B7B2C9 /* WindNativeAdViewController.m */; };
 		C73602B0275E084700B7B2C9 /* WindToolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73602AF275E084700B7B2C9 /* WindToolViewController.m */; };
 		C73602B7275E0A1800B7B2C9 /* WindmillDropdownListView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73602B5275E0A1800B7B2C9 /* WindmillDropdownListView.m */; };
@@ -66,8 +65,6 @@
 		C73602A3275E07F500B7B2C9 /* WindRewardVideoAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindRewardVideoAdViewController.m; sourceTree = "<group>"; };
 		C73602A5275E080900B7B2C9 /* WindSplashAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindSplashAdViewController.h; sourceTree = "<group>"; };
 		C73602A6275E080900B7B2C9 /* WindSplashAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindSplashAdViewController.m; sourceTree = "<group>"; };
-		C73602A8275E081F00B7B2C9 /* WindIntersititialAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindIntersititialAdViewController.h; sourceTree = "<group>"; };
-		C73602A9275E081F00B7B2C9 /* WindIntersititialAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindIntersititialAdViewController.m; sourceTree = "<group>"; };
 		C73602AB275E083400B7B2C9 /* WindNativeAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindNativeAdViewController.h; sourceTree = "<group>"; };
 		C73602AC275E083400B7B2C9 /* WindNativeAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindNativeAdViewController.m; sourceTree = "<group>"; };
 		C73602AE275E084700B7B2C9 /* WindToolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindToolViewController.h; sourceTree = "<group>"; };
@@ -112,6 +109,7 @@
 		C7D8C2F9275F8F7600719BFD /* XLFormDropdownCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLFormDropdownCell.h; sourceTree = "<group>"; };
 		C7D8C2FA275F8F7600719BFD /* XLFormDropdownCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XLFormDropdownCell.m; sourceTree = "<group>"; };
 		C7D8C2FB275F8F7600719BFD /* XLFormDropdownCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XLFormDropdownCell.xib; sourceTree = "<group>"; };
+		C7E30EB22D15109B00EA044A /* libWindMotionPlugin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libWindMotionPlugin.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +138,7 @@
 		82032490365CF4481721C13D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7E30EB22D15109B00EA044A /* libWindMotionPlugin.a */,
 				C7CD05BE2762004F0015C417 /* WindMillSDK.framework */,
 				C7CD05BC2762004B0015C417 /* WindFoundation.framework */,
 				C7CD05BA276200470015C417 /* WindSDK.framework */,
@@ -219,8 +218,6 @@
 			children = (
 				C73602A5275E080900B7B2C9 /* WindSplashAdViewController.h */,
 				C73602A6275E080900B7B2C9 /* WindSplashAdViewController.m */,
-				C73602A8275E081F00B7B2C9 /* WindIntersititialAdViewController.h */,
-				C73602A9275E081F00B7B2C9 /* WindIntersititialAdViewController.m */,
 				C712D7892A1C6E1100E7D60B /* WindNewIntersititialAdViewController.h */,
 				C712D78A2A1C6E1100E7D60B /* WindNewIntersititialAdViewController.m */,
 				C73602AB275E083400B7B2C9 /* WindNativeAdViewController.h */,
@@ -419,7 +416,6 @@
 				C7360285275E017D00B7B2C9 /* ViewController.m in Sources */,
 				C7360298275E05B300B7B2C9 /* XLFormRowLeftIconAndTitleCell.m in Sources */,
 				C7CD05B92761FA210015C417 /* FeedStyleHelper.m in Sources */,
-				C73602AA275E081F00B7B2C9 /* WindIntersititialAdViewController.m in Sources */,
 				C7D8C2FC275F8F7600719BFD /* XLFormDropdownCell.m in Sources */,
 				C736027F275E017D00B7B2C9 /* AppDelegate.m in Sources */,
 				C7360290275E017F00B7B2C9 /* main.m in Sources */,

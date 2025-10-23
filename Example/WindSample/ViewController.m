@@ -10,7 +10,6 @@
 #import <WindSDK/WindSDK.h>
 #import "WindRewardVideoAdViewController.h"
 #import "WindNewIntersititialAdViewController.h"
-#import "WindIntersititialAdViewController.h"
 #import "WindNativeAdViewController.h"
 #import "WindSplashAdViewController.h"
 #import "WindToolViewController.h"
@@ -25,7 +24,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"Wind Demo";
+    [self setupRightItem];
     [self initializeForm];
+}
+
+- (void)setupRightItem {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"初始化广告SDK" forState:UIControlStateNormal];
+    btn.titleLabel.font = [UIFont systemFontOfSize:14];
+    [btn addTarget:self action:@selector(initWindSDK) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+}
+
+- (void)initWindSDK {
+    WindAdOptions *option = [[WindAdOptions alloc] initWithAppId:AppId appKey:AppKey];
+    [WindAds startWithOptions:option];
+    
 }
 
 - (void)initializeForm {
@@ -52,16 +66,6 @@
     row.required = YES;
     [row.cellConfigAtConfigure setValue:[UIImage imageNamed:@"demo_play"] forKey:@"image"];
     row.action.formSelector = @selector(rewardVideoAdAction:);
-    [section addFormRow:row];
-    
-    //****************************************************
-    section = [XLFormSectionDescriptor formSection];
-    [form addFormSection:section];
-    
-    row = [XLFormRowDescriptor formRowDescriptorWithTag:@"InterstitialAd" rowType:XLFormRowDescriptorTypeLeftIconAndTitle title:@"全屏插屏广告"];
-    row.required = YES;
-    [row.cellConfigAtConfigure setValue:[UIImage imageNamed:@"demo_play"] forKey:@"image"];
-    row.action.formSelector = @selector(interstitialAdAction:);
     [section addFormRow:row];
     
     //****************************************************
@@ -113,10 +117,6 @@
 }
 - (void)rewardVideoAdAction:(XLFormRowDescriptor *)sender {
     WindRewardVideoAdViewController *vc = [WindRewardVideoAdViewController new];
-    [self.navigationController pushViewController:vc animated:YES];
-}
-- (void)interstitialAdAction:(XLFormRowDescriptor *)sender {
-    WindIntersititialAdViewController *vc = [WindIntersititialAdViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (void)newInterstitialAdAction:(XLFormRowDescriptor *)sender {
